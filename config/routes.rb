@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  get 'pages/index'
+  resources :rooms
+  
   devise_for :users
   resources :users
   

@@ -17,8 +17,10 @@
   <body>
 
     <header>
-      <%= render "shared/user_logged" %>
-      <%= render "shared/navbar" %>
+      <% if user_signed_in? %>
+        <%= render "shared/user_logged" %>
+        <%= render "shared/navbar" %>
+      <% end %>
       <%= render "shared/notifications" %>
     </header>
 
